@@ -266,6 +266,10 @@ img {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
+.feature-icon-thumb {
+  padding: 24px 100px;
+}
+
 .feature-title {
   margin-bottom: 8px;
   font-weight: 500;
