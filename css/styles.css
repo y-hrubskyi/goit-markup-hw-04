@@ -90,7 +90,7 @@ img {
   padding-bottom: 120px;
 }
 
-.section .title {
+.section-title {
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -122,6 +122,8 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -267,7 +269,14 @@ img {
 }
 
 .feature-icon-thumb {
-  padding: 24px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  margin-bottom: 8px;
+
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
 }
 
 .feature-title {
@@ -320,7 +329,8 @@ img {
 }
 
 .employee-data {
-  padding: 32px 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-align: center;
 }
 
@@ -364,8 +374,6 @@ img {
 }
 
 .social-icon {
-  width: 16px;
-  height: 16px;
   fill: currentColor;
 }
 
@@ -376,8 +384,8 @@ img {
 
 /* Customers */
 
-.customers .title {
-  margin-bottom: 72px;
+.customers .section-title {
+  line-height: 1.1;
 }
 
 .customers-list {
@@ -404,19 +412,13 @@ img {
 }
 
 .customer-icon {
-  width: 104px;
-  height: 56px;
   fill: currentColor;
 }
 
 .customer-link:hover,
 .customer-link:focus {
   border-color: var(--active-color);
-}
-
-.customer-link:hover .customer-icon,
-.customer-link:focus .customer-icon {
-  fill: var(--active-color);
+  color: var(--active-color);
 }
 
 /* Footer */
@@ -429,7 +431,7 @@ img {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -454,7 +456,7 @@ img {
   color: var(--footer-text-color);
 }
 
-.social-media-title {
+.social-media-text {
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -488,8 +490,6 @@ img {
 }
 
 .social-media-icon {
-  width: 24px;
-  height: 24px;
   fill: currentColor;
 }
 
