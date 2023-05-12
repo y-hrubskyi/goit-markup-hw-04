@@ -377,6 +377,54 @@ img {
   background-color: var(--active-color);
 }
 
+/* Customers */
+
+.customers .title {
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  /* outline: 2px solid teal; */
+}
+
+.customers-list-item {
+  width: 168px;
+  height: 88px;
+
+  /* outline: 2px solid teal; */
+}
+
+.customer-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #8e8f99;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  /* outline: 2px solid tomato; */
+}
+
+.customer-icon {
+  fill: currentColor;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--active-color);
+}
+
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
+  fill: var(--active-color);
+}
+
 /* Footer */
 
 .footer {
